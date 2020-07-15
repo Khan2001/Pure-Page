@@ -1,0 +1,118 @@
+/*头部*/
+*{
+ 	padding: 0px;
+ 	margin: 0px;
+ 	border: 0px;
+}
+body{
+	background-color: #F5F6EB;
+}
+#title{
+	font-size: 100px;
+	font-family: Impact;
+	color: #34352C;
+	margin-left: 40px;
+}
+#subtitle{
+	font-size: 30px;
+	font-family: 等线 bold;
+	color: #34352C;
+	margin-left: 50px;
+}
+input{
+	border-radius: 5px;
+}
+
+
+/*右上角按钮*/
+#saveBtn{
+	width: 100px;
+	height: 40px;
+	margin-left: 50px;
+	background-color: #C9CABB;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+#returnBtn{
+	width: 100px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #C9CABB;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+.rightIcon{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+/*大面板*/
+.main{
+	background-color: #C9CABB;
+	color: #34352C;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding: 10px;
+}
+h1{
+	font-size: 20px;
+}
+.inputText{
+	height: 20px;
+	width: 400px;
+	text-indent: 5px;
+	outline: none;
+}
+a:link,a:visited{
+	color: #202020;
+}
+
+/*颜色预览*/
+.colorShow{
+	display: inline;
+}
+#titleColorShow{
+	display: inline;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+#hitokotoColorShow{
+	display: inline;
+	vertical-align: middle;
+	border-radius: 2px;
+}
+
+/*网站及图标*/
+.starWeb{
+	width: 500px;
+	background-color: #F5F6EE;
+	border-radius: 10px;
+	padding: 10px;
+}
+.engineIcon{
+	height: 32px;
+	width: 32px;
+}
+.iconImg{
+	height: 32px;
+	width: 32px;
+	padding: 5px;
+	vertical-align: middle;
+}
+.clearIcon{
+	width: 32px;
+	height: 32px;
+	float: right;
+}
+
+#addWeb{
+	background-color: #F5F6EE;
+	border-radius: 10px;
+	outline: none;
+	cursor: pointer;
+}

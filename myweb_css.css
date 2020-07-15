@@ -1,0 +1,216 @@
+/*头部*/
+*{
+ 	padding: 0px;
+ 	margin: 0px;
+ 	border: 0px;
+	user-select: none;
+}
+#header{
+	font-size: 150px;
+	/*font-family: Impact;
+	color: #FCFCFC;*/
+	opacity: 0;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	transition: all 0.8s;
+	letter-spacing: -65px;
+}
+body{
+    /*background-image: url('https://api.dujin.org/bing/1920.php');*/
+    background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+/*http://api.btstu.cn/sjbz/?lx=suiji*/
+/*https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN*/
+
+
+/*搜索框*/
+#bar{
+	margin-bottom: 80px;
+	transition: margin-bottom 0.8s;
+}
+#choose{
+	height: 60px;
+	width: 60px;
+    background: #FDF9EE;
+    opacity: 0;
+    border-radius: 15px;
+    transition: 1.5s;
+    outline: none;
+}
+#engine1,#engine2,#engine3,#engine4,#engine5{
+	width: 30px;
+	height: 30px;
+	display: inline;
+	text-align: center;
+	vertical-align: middle;
+}
+li{
+	list-style-type: none;
+}
+#bar input{
+	height: 0px;
+	width: 255px;
+    border-radius: 100px;
+    vertical-align:middle;
+    background: #FFFFFF;
+    opacity: 30%;
+    color: #9E9C9C;
+    outline: none;
+    text-indent: 20px;
+	transition-property: width, height, border-radius, opacity;
+	transition-duration: 0.8s,0.5s,0.5s,0.5s;
+	transition-timing-function: ease-out, ease-out, ease, ease;
+}
+#bar input[placeholder]{
+	font-size: 25px;
+	font-family: 等线 bold;
+}
+#clickButton{
+	height: 60px;
+	width: 60px;
+    background: #FFFFFF;
+    opacity: 0;
+    transition: 1.5s;
+    border-radius: 15px;
+    outline: none;
+}
+#magnifier{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+/*搜索联想*/
+#associate_ul{
+	background-color: #FCFCFC;
+	border-radius: 0 0 10px 10px;
+	position: absolute;
+	left: 27.2%;
+	margin: auto;
+	width: 700px;
+	text-align: left;
+	text-indent: 20px;
+	overflow: hidden;
+}
+a:link,a:visited{
+	color: #202020;
+	text-decoration: none;
+}
+.associate_li{
+	padding: 8px;
+	border-top: solid 1px #9E9C9C;
+	font-size: 20px;
+	font-family: 等线;
+}
+.associate_li:hover{
+	background-color: #9E9C9C;
+	opacity: 80%;
+}
+
+
+
+
+
+
+/*收藏的网址*/
+#nav{
+	display: inline-block;
+}
+.starWeb{
+	width: 54px;
+	height: 0px;
+	border-radius: 100px;
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0,0,0,.1);
+	background:#FFFFFF;
+	display: flex;
+	justify-content: center;
+	float: left;
+	list-style: none;
+	margin: 20px;
+	opacity: 50%;
+	transition: all 0.5s;
+}
+.starWeb:hover{
+	opacity: 1;
+	transform: translateY(-5px);
+}
+.webName{
+	color: #f0ebe5;
+	font-family: 等线 bold;
+	text-shadow: 1px 1px 3px #656565;
+	font-size: 13px;
+	max-width: 100px;
+	opacity: 0;
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: all 0.5s;
+}
+.icon{
+	padding: 12px;
+	width: 30px;
+	height: 0px;
+	border-radius: 15px;
+	transition: all 0.5s;
+}
+
+/*更多功能*/
+#more{
+	/*margin-top: 100px;*/
+	width: 20px;
+	position: absolute;
+	right: 5px;
+	bottom: 20px;
+}
+.moreIcon{
+	width: 20px;
+	height: 20px;
+	padding: 2px;
+	opacity: 40%;
+    cursor: pointer;
+}
+.moreIcon:hover{
+	opacity: 70%;
+}
+
+/*一言*/
+#hitokoto{
+	/*color: #F0EBE5;
+	font-family: 微软雅黑;*/
+	font-size: 13px;
+	text-shadow: 1px 1px 3px #656565;
+	text-align: center;
+	opacity: 0;
+	transition: all 2s;
+	position: absolute;
+	left: 30%;
+	right: 30%;
+    bottom: 40px;
+}
+
+/*浮窗*/
+#floatWindow{
+	position: fixed;
+	right: 25px;
+	bottom: 10px;
+	background-color: #555555;
+	opacity: 80%;
+	padding: 10px;
+	border-radius: 15px;
+}
+#close{
+	float: right;
+	color: white;
+	font-size: 20px;
+}
+.windowText{
+	color: white;
+	font-size: 20px;
+	font-family: 等线 light;
+}
+
