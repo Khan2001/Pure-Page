@@ -1,82 +1,96 @@
 /*头部*/
-*{
- 	padding: 0px;
- 	margin: 0px;
- 	border: 0px;
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 	user-select: none;
 }
-#header{
+
+#header {
 	font-size: 150px;
 	/*font-family: Impact;
 	color: #FCFCFC;*/
 	opacity: 0;
 	margin-top: 80px;
 	margin-bottom: 60px;
-	transition: all 0.8s;
+	transition: all .8s;
 	letter-spacing: -65px;
 }
-body{
-    /*background-image: url('https://api.dujin.org/bing/1920.php');*/
-    background-size: 100%;
+
+body {
+	/*background-image: url('https://api.dujin.org/bing/1920.php');*/
+	background-size: 100%;
 	background-repeat: no-repeat;
 	text-align: center;
 }
+
 /*http://api.btstu.cn/sjbz/?lx=suiji*/
 /*https://bing.biturl.top/?resolution=1920&format=image&index=0&mkt=zh-CN*/
 
 
 /*搜索框*/
-#bar{
+#bar {
 	margin-bottom: 80px;
-	transition: margin-bottom 0.8s;
+	transition: margin-bottom .8s;
 }
-#choose{
+
+#choose {
 	height: 60px;
 	width: 60px;
-    background: #FDF9EE;
-    opacity: 0;
-    border-radius: 15px;
-    transition: 1.5s;
-    outline: none;
+	background: #FDF9EE;
+	opacity: 0;
+	border-radius: 15px;
+	transition: 1.5s;
+	outline: none;
 }
-#engine1,#engine2,#engine3,#engine4,#engine5{
+
+#engine1,
+#engine2,
+#engine3,
+#engine4,
+#engine5 {
 	width: 30px;
 	height: 30px;
 	display: inline;
 	text-align: center;
 	vertical-align: middle;
 }
-li{
+
+li {
 	list-style-type: none;
 }
-#bar input{
+
+#bar input {
 	height: 0px;
 	width: 255px;
-    border-radius: 100px;
-    vertical-align:middle;
-    background: #FFFFFF;
-    opacity: 30%;
-    color: #9E9C9C;
-    outline: none;
-    text-indent: 20px;
+	border-radius: 100px;
+	vertical-align: middle;
+	background: #FFFFFF;
+	opacity: 30%;
+	color: #9E9C9C;
+	outline: none;
+	text-indent: 20px;
 	transition-property: width, height, border-radius, opacity;
-	transition-duration: 0.8s,0.5s,0.5s,0.5s;
+	transition-duration: .8s, .5s, .5s, .5s;
 	transition-timing-function: ease-out, ease-out, ease, ease;
 }
-#bar input[placeholder]{
+
+#bar input[placeholder] {
 	font-size: 25px;
-	font-family: 等线 bold;
+	font-family: "Arial bold", Helvetica, sans-serif;
 }
-#clickButton{
+
+#clickButton {
 	height: 60px;
 	width: 60px;
-    background: #FFFFFF;
-    opacity: 0;
-    transition: 1.5s;
-    border-radius: 15px;
-    outline: none;
+	background: #FFFFFF;
+	opacity: 0;
+	transition: 1.5s;
+	border-radius: 15px;
+	outline: none;
 }
-#magnifier{
+
+#magnifier {
 	width: 20px;
 	height: 20px;
 	text-align: center;
@@ -85,7 +99,7 @@ li{
 
 
 /*搜索联想*/
-#associate_ul{
+#associate_ul {
 	background-color: #FCFCFC;
 	border-radius: 0 0 10px 10px;
 	position: absolute;
@@ -96,17 +110,21 @@ li{
 	text-indent: 20px;
 	overflow: hidden;
 }
-a:link,a:visited{
+
+a:link,
+a:visited {
 	color: #202020;
 	text-decoration: none;
 }
-.associate_li{
-	padding: 8px;
+
+.associate_li {
+	padding: 5px;
 	border-top: solid 1px #9E9C9C;
 	font-size: 20px;
-	font-family: 等线;
+	font-family: Arial, Helvetica, sans-serif;
 }
-.associate_li:hover{
+
+.associate_li:hover {
 	background-color: #9E9C9C;
 	opacity: 80%;
 }
@@ -117,31 +135,34 @@ a:link,a:visited{
 
 
 /*收藏的网址*/
-#nav{
+#nav {
 	display: inline-block;
 }
-.starWeb{
+
+.starWeb {
 	width: 54px;
 	height: 0px;
 	border-radius: 100px;
 	position: relative;
-	box-shadow: 0 3px 6px rgba(0,0,0,.1);
-	background:#FFFFFF;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+	background: #FFFFFF;
 	display: flex;
 	justify-content: center;
 	float: left;
 	list-style: none;
 	margin: 20px;
 	opacity: 50%;
-	transition: all 0.5s;
+	transition: all .5s;
 }
-.starWeb:hover{
+
+.starWeb:hover {
 	opacity: 1;
 	transform: translateY(-5px);
 }
-.webName{
+
+.webName {
 	color: #f0ebe5;
-	font-family: 等线 bold;
+	font-family: "Arial bold", Helvetica, sans-serif;
 	text-shadow: 1px 1px 3px #656565;
 	font-size: 13px;
 	max-width: 100px;
@@ -149,37 +170,40 @@ a:link,a:visited{
 	display: inline-block;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	transition: all 0.5s;
+	transition: all .5s;
 }
-.icon{
+
+.icon {
 	padding: 12px;
 	width: 30px;
 	height: 0px;
 	border-radius: 15px;
-	transition: all 0.5s;
+	transition: all .5s;
 }
 
 /*更多功能*/
-#more{
+#more {
 	/*margin-top: 100px;*/
 	width: 20px;
 	position: absolute;
 	right: 5px;
 	bottom: 20px;
 }
-.moreIcon{
+
+.moreIcon {
 	width: 20px;
 	height: 20px;
 	padding: 2px;
 	opacity: 40%;
-    cursor: pointer;
+	cursor: pointer;
 }
-.moreIcon:hover{
+
+.moreIcon:hover {
 	opacity: 70%;
 }
 
 /*一言*/
-#hitokoto{
+#hitokoto {
 	/*color: #F0EBE5;
 	font-family: 微软雅黑;*/
 	font-size: 13px;
@@ -190,11 +214,22 @@ a:link,a:visited{
 	position: absolute;
 	left: 30%;
 	right: 30%;
-    bottom: 40px;
+	bottom: 40px;
+}
+
+/*备案信息*/
+#beian {
+	font-size: 10px;
+	text-shadow: 1px 1px 3px #656565;
+	text-align: center;
+	opacity: .8;
+	position: absolute;
+	right: 45%;
+	bottom: 10px;
 }
 
 /*浮窗*/
-#floatWindow{
+#floatWindow {
 	position: fixed;
 	right: 25px;
 	bottom: 10px;
@@ -203,14 +238,15 @@ a:link,a:visited{
 	padding: 10px;
 	border-radius: 15px;
 }
-#close{
+
+#close {
 	float: right;
 	color: white;
 	font-size: 20px;
 }
-.windowText{
+
+.windowText {
 	color: white;
 	font-size: 20px;
-	font-family: 等线 light;
+	font-family: "Arial light", Helvetica, sans-serif;
 }
-

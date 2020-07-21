@@ -1,31 +1,35 @@
 /*头部*/
-*{
- 	padding: 0px;
- 	margin: 0px;
- 	border: 0px;
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
-body{
+
+body {
 	background-color: #F5F6EB;
 }
-#title{
+
+#title {
 	font-size: 100px;
-	font-family: Impact;
+	font-family: Impact, Helvetica, sans-serif;
 	color: #34352C;
 	margin-left: 40px;
 }
-#subtitle{
+
+#subtitle {
 	font-size: 30px;
-	font-family: 等线 bold;
+	font-family: "Arial bold", Helvetica, sans-serif;
 	color: #34352C;
 	margin-left: 50px;
 }
-input{
+
+input {
 	border-radius: 5px;
 }
 
 
 /*右上角按钮*/
-#saveBtn{
+#saveBtn {
 	width: 100px;
 	height: 40px;
 	margin-left: 50px;
@@ -34,7 +38,8 @@ input{
 	outline: none;
 	cursor: pointer;
 }
-#returnBtn{
+
+#returnBtn {
 	width: 100px;
 	height: 40px;
 	margin-left: 10px;
@@ -43,14 +48,15 @@ input{
 	outline: none;
 	cursor: pointer;
 }
-.rightIcon{
+
+.rightIcon {
 	width: 24px;
 	height: 24px;
 	vertical-align: middle;
 }
 
 /*大面板*/
-.main{
+.main {
 	background-color: #C9CABB;
 	color: #34352C;
 	border-radius: 10px;
@@ -59,58 +65,67 @@ input{
 	margin-right: 50px;
 	padding: 10px;
 }
-h1{
+
+h1 {
 	font-size: 20px;
 }
-.inputText{
+
+.inputText {
 	height: 20px;
 	width: 400px;
 	text-indent: 5px;
 	outline: none;
 }
-a:link,a:visited{
+
+a:link,
+a:visited {
 	color: #202020;
 }
 
 /*颜色预览*/
-.colorShow{
+.colorShow {
 	display: inline;
 }
-#titleColorShow{
+
+#titleColorShow {
 	display: inline;
 	vertical-align: middle;
 	border-radius: 2px;
 }
-#hitokotoColorShow{
+
+#hitokotoColorShow {
 	display: inline;
 	vertical-align: middle;
 	border-radius: 2px;
 }
 
 /*网站及图标*/
-.starWeb{
+.starWeb {
 	width: 500px;
 	background-color: #F5F6EE;
 	border-radius: 10px;
 	padding: 10px;
 }
-.engineIcon{
+
+.engineIcon {
 	height: 32px;
 	width: 32px;
 }
-.iconImg{
+
+.iconImg {
 	height: 32px;
 	width: 32px;
 	padding: 5px;
 	vertical-align: middle;
 }
-.clearIcon{
+
+.clearIcon {
 	width: 32px;
 	height: 32px;
 	float: right;
 }
 
-#addWeb{
+#addWeb {
 	background-color: #F5F6EE;
 	border-radius: 10px;
 	outline: none;

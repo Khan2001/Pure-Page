@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+	<title>Pure Page 设置</title>
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="keywords" content="pure page,home page，纯粹主页，纯粹导航页，主页，导航页">
+	<meta name="description"
+		content="本网站是可汗的第一个导航页，也是一个纯粹的页面。This website is the first navigation page of Khan and is also a pure page.">
+	<meta name="author" content="Khan">
+	<link rel="stylesheet" type="text/css" href="settings_css.css">
+</head>
+
+<body>
+	<span id="title">Pure Page Settings</span>
+	<span id="subtitle">⚙️主页设置</span>
+
+	<button id="saveBtn"><img src="./img/save.png" class="rightIcon">保存设置</button>
+	<a href="./"><button id="returnBtn"><img src="./img/home.png" class="rightIcon">返回主页</button></a>
+	<form>
+		<div class="main">
+			<form>
+				<h1>🚩标题设置</h1><br>
+				<p>
+					显示标题：&nbsp;&nbsp;
+					<input type="radio" name="titleShow" value="true">显示
+					<input type="radio" name="titleShow" value="false">隐藏
+				</p>
+				<p>
+					标题颜色：&nbsp;&nbsp;#
+					<input type="text" name="titleColor" class="inputText" id="titleColor" onkeyup="changeTitleColor()"
+						onblur="testTitleColor()">
+					&nbsp;&nbsp;*输入不包含#的HEX格式颜色值
+				</p>
+				<div class="colorShow">颜色预览：&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div id="titleColorShow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				</p>
+				<p>
+					标题字体：&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="titleFont" class="inputText">
+					&nbsp;&nbsp;*在C:\Windows\Fonts查看电脑已有字体
+				</p>
+			</form>
+		</div>
+
+		<div class="main">
+			<h1>🔍搜索设置</h1><br>
+			<p>
+				默认搜索引擎：&nbsp;&nbsp;
+				<input type="radio" name="searchEngine" value="baidu"><img src="./img/baidu.png"
+					class="engineIcon">百度&nbsp;&nbsp;
+				<input type="radio" name="searchEngine" value="sogou"><img src="./img/sogou.png"
+					class="engineIcon">搜狗&nbsp;&nbsp;
+				<input type="radio" name="searchEngine" value="bing"><img src="./img/bing.png"
+					class="engineIcon">必应&nbsp;&nbsp;
+				<input type="radio" name="searchEngine" value="google"><img src="./img/google.png"
+					class="engineIcon">谷歌&nbsp;&nbsp;
+				<input type="radio" name="searchEngine" value="360"><img src="./img/360.png" class="engineIcon">360
+				&nbsp;&nbsp;&nbsp;&nbsp;*在主页也可以临时更换使用的搜索引擎
+			</p>
+		</div>
+
+		<div class="main">
+			<h1>🖼️壁纸设置（默认必应每日壁纸）</h1><br>
+			<p>
+				壁纸的URL外链地址： <br>url=
+				<input type="text" name="backgroundUrl" class="inputText" id="backgroundUrl"
+					onblur="testBackgroundUrl()">
+			</p>
+			<p>*在图床（例如：<a href="https://imgchr.com/"
+					target="_blank">https://imgchr.com/</a>）中上传本地图片后，将生成的图片URL链接（以图片的扩展名.jpg等结尾）放在此处</p>
+		</div>
+
+		<div class="main">
+			<form>
+				<h1>💬一言设置</h1><br>
+				<p>
+					显示一言：&nbsp;&nbsp;
+					<input type="radio" name="hitokotoShow" value="true">显示
+					<input type="radio" name="hitokotoShow" value="false">隐藏
+				</p>
+				<p>
+					一言颜色：&nbsp;&nbsp;#
+					<input type="text" name="hitokotoColor" class="inputText" id="hitokotoColor"
+						onkeyup="changeHitokotoColor()" onblur="testHitokotoColor()">
+					&nbsp;&nbsp;*输入不包含#的HEX格式颜色值
+				</p>
+				<div class="colorShow">颜色预览：&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div id="hitokotoColorShow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<p>
+					一言字体：&nbsp;&nbsp;&nbsp;&nbsp;
+					<input type="text" name="hitokotoFont" class="inputText">
+					&nbsp;&nbsp;*在C:\Windows\Fonts查看电脑已有字体
+				</p>
+			</form>
+		</div>
+
+		<div class="main" id="webList">
+			<h1>⭐收藏的网站</h1><br>
+
+			<p>
+				图标的地址获取方法见
+				<a href="https://blog.csdn.net/qq_45770511/article/details/107244067"
+					target="_blank">https://blog.csdn.net/qq_45770511/article/details/107244067</a>
+				，当然你也可以通过上面🖼️壁纸设置的方法获得图标地址
+			</p><br>
+
+			<div>
+				<button id="addWeb"><img src="./img/add.png" class="iconImg">点击此处继续添加网站&nbsp;&nbsp;</button>
+			</div>
+		</div>
+
+	</form>
+	<br>
+
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="settings_js.js"></script>
+	<script type="text/javascript" src="settings_jquery.js"></script>
+</body>
+
+</html>
