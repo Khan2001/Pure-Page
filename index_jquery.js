@@ -10,14 +10,19 @@ function associate() {
 		var oScript = document.createElement('script');
 		if ($('#engine1').css("display") == "inline") {
 			oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=baidu';
+			choice = 1;
 		} else if ($('#engine2').css("display") == "inline") {
 			oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=sogou';
+			choice = 2;
 		} else if ($('#engine3').css("display") == "inline") {
 			oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=bing';
+			choice = 3;
 		} else if ($('#engine4').css("display") == "inline") {
 			oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=google';
+			choice = 4;
 		} else {
 			oScript.src = 'https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=' + value + '&cb=so360';
+			choice = 5;
 		}
 		$('body').append(oScript);
 		$('#nav').hide(10);
