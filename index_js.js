@@ -72,17 +72,11 @@ function chooseEngine() {
 function bigger() {
 	$get('inputId').style.setProperty("border-radius", "10px");
 	$get('inputId').style.setProperty("opacity", "1");
-	$get('bar').style.setProperty("margin-bottom", "145px");
-	$get('header').style.setProperty("font-size", "100px");
-	$get('header').style.setProperty("margin-bottom", "90px");
 }
 
 function smaller() {
 	$get('inputId').style.setProperty("border-radius", "100px");
 	$get('inputId').style.setProperty("opacity", "30%");
-	$get('bar').style.setProperty("margin-bottom", "80px");
-	$get('header').style.setProperty("font-size", "150px");
-	$get('header').style.setProperty("margin-bottom", "60px");
 }
 
 
